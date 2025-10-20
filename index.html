@@ -3,9 +3,473 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BookifyRent - Rent Smarter, Not Harder</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">BookifyRent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#categories">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#how-to">How It Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <div class="input-group me-3">
+                            <input type="text" class="form-control" placeholder="Search for books..." aria-label="Search">
+                            <button class="btn btn-outline-primary" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <a href="#" class="btn btn-primary">Login / Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Rent Smarter, Not Harder</h1>
+                    <p class="hero-subtitle">Access thousands of textbooks and bestsellers for a fraction of the price. Your digital library is just a click away.</p>
+                    <a href="#" class="btn btn-accent btn-lg">Start Your Rent Spree</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="book-cover mx-auto" style="max-width: 300px; border-radius: 15px;">
+                        <i class="fas fa-book-open fa-5x" style="color: #29ABE2;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books -->
+    <section class="container mb-5" id="featured">
+        <h2 class="section-title" data-aos="fade-up">Featured & New Drops</h2>
+        
+        <div class="row">
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="100">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book fa-3x"></i>
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Advanced Calculus</h4>
+                        <p class="book-author">by Dr. Michael Chen</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="book-price">$3.99/week</span>
+                            <button class="btn btn-sm btn-accent" data-bs-toggle="modal" data-bs-target="#previewModal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="200">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book fa-3x"></i>
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">The Psychology of Success</h4>
+                        <p class="book-author">by Sarah Johnson</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="book-price">$2.99/week</span>
+                            <button class="btn btn-sm btn-accent" data-bs-toggle="modal" data-bs-target="#previewModal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="300">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book fa-3x"></i>
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Computer Science Fundamentals</h4>
+                        <p class="book-author">by Alex Rodriguez</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="book-price">$4.49/week</span>
+                            <button class="btn btn-sm btn-accent" data-bs-toggle="modal" data-bs-target="#previewModal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="400">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book fa-3x"></i>
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Modern Physics</h4>
+                        <p class="book-author">by Dr. Emily Watson</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="book-price">$3.49/week</span>
+                            <button class="btn btn-sm btn-accent" data-bs-toggle="modal" data-bs-target="#previewModal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="500">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book fa-3x"></i>
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Business Strategy 101</h4>
+                        <p class="book-author">by Robert Williams</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="book-price">$2.49/week</span>
+                            <button class="btn btn-sm btn-accent" data-bs-toggle="modal" data-bs-target="#previewModal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="600">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <i class="fas fa-book fa-3x"></i>
+                    </div>
+                    <div class="book-info">
+                        <h4 class="book-title">Creative Writing Guide</h4>
+                        <p class="book-author">by Jennifer Lee</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="book-price">$1.99/week</span>
+                            <button class="btn btn-sm btn-accent" data-bs-toggle="modal" data-bs-target="#previewModal">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Library Filters -->
+    <section class="container mb-5" id="categories">
+        <h2 class="section-title" data-aos="fade-up">Find Your Niche</h2>
+        
+        <div class="category-filter">
+            <button class="category-btn active">All Categories</button>
+            <button class="category-btn">Finals Prep</button>
+            <button class="category-btn">Fiction</button>
+            <button class="category-btn">College Apps</button>
+            <button class="category-btn">Hustle Culture</button>
+            <button class="category-btn">STEM</button>
+            <button class="category-btn">Humanities</button>
+            <button class="category-btn">Business</button>
+            <button class="category-btn">Self-Help</button>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-center">
+                    <div class="book-cover rounded-circle mx-auto mb-3" style="width: 120px; height: 120px;">
+                        <i class="fas fa-calculator fa-2x"></i>
+                    </div>
+                    <h5>Mathematics</h5>
+                    <p class="text-muted">245 books</p>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-center">
+                    <div class="book-cover rounded-circle mx-auto mb-3" style="width: 120px; height: 120px;">
+                        <i class="fas fa-flask fa-2x"></i>
+                    </div>
+                    <h5>Science</h5>
+                    <p class="text-muted">189 books</p>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-center">
+                    <div class="book-cover rounded-circle mx-auto mb-3" style="width: 120px; height: 120px;">
+                        <i class="fas fa-laptop-code fa-2x"></i>
+                    </div>
+                    <h5>Technology</h5>
+                    <p class="text-muted">312 books</p>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="text-center">
+                    <div class="book-cover rounded-circle mx-auto mb-3" style="width: 120px; height: 120px;">
+                        <i class="fas fa-book-open fa-2x"></i>
+                    </div>
+                    <h5>Literature</h5>
+                    <p class="text-muted">421 books</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To Section -->
+    <section class="container mb-5" id="how-to">
+        <h2 class="section-title" data-aos="fade-up">How It Works</h2>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="100">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h4>1. Search</h4>
+                    <p>Find the perfect book from our extensive library of textbooks and bestsellers.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h4>2. Rent</h4>
+                    <p>Choose your rental period and complete the quick checkout process.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="300">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <h4>3. Read</h4>
+                    <p>Access your books instantly on any device, online or offline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="container mb-5" id="pricing">
+        <h2 class="section-title" data-aos="fade-up">Choose Your Plan</h2>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pricing-card">
+                    <h4>Free</h4>
+                    <div class="price">$0<span class="price-period">/month</span></div>
+                    <p>Perfect for trying out our service</p>
+                    <ul class="feature-list">
+                        <li>1 Book Rental at a time</li>
+                        <li>Standard Rental Periods</li>
+                        <li>Basic Support</li>
+                        <li>Access to Free Collection</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-primary w-100">Get Started</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h4>Premium</h4>
+                    <div class="price">$9.99<span class="price-period">/month</span></div>
+                    <p>Best value for avid readers</p>
+                    <ul class="feature-list">
+                        <li>Up to 5 Book Rentals</li>
+                        <li>Extended Rental Periods</li>
+                        <li>Priority Support</li>
+                        <li>Access to Entire Library</li>
+                        <li>Early Access to New Releases</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary w-100">Go Premium</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="pricing-card">
+                    <h4>Student</h4>
+                    <div class="price">$4.99<span class="price-period">/month</span></div>
+                    <p>Special discount for students</p>
+                    <ul class="feature-list">
+                        <li>Up to 3 Book Rentals</li>
+                        <li>Extended Rental Periods</li>
+                        <li>Priority Support</li>
+                        <li>Access to Entire Library</li>
+                        <li>Student-Only Content</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-primary w-100">Verify Student Status</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3 class="navbar-brand">BookifyRent</h3>
+                    <p>Your digital library for textbooks and bestsellers. Rent smarter, not harder.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-tiktok fa-lg"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Featured Books</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Popular Rentals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 mb-4">
+                    <h5>Download App</h5>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="btn btn-outline-light mb-2">
+                            <i class="fab fa-apple me-2"></i> App Store
+                        </a>
+                        <a href="#" class="btn btn-outline-light">
+                            <i class="fab fa-google-play me-2"></i> Google Play
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 BookifyRent. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Preview Modal -->
+    <div class="modal fade preview-modal" id="previewModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Book Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <div class="book-cover mx-auto mb-4" style="height: 300px; border-radius: 15px;">
+                                <i class="fas fa-book fa-5x"></i>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-accent">Rent Now</button>
+                                <button class="btn btn-outline-primary">Add to Wishlist</button>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Advanced Calculus</h3>
+                            <p class="text-muted">by Dr. Michael Chen</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-2">Mathematics</span>
+                                <span class="badge bg-secondary">Textbook</span>
+                            </div>
+                            <p class="mb-3">A comprehensive guide to advanced calculus concepts, perfect for university students and anyone looking to deepen their mathematical understanding.</p>
+                            <div class="mb-3">
+                                <h5>Rental Options</h5>
+                                <div class="d-flex gap-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="rentalOption" id="option1" checked>
+                                        <label class="form-check-label" for="option1">
+                                            1 Week - $3.99
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="rentalOption" id="option2">
+                                        <label class="form-check-label" for="option2">
+                                            2 Weeks - $6.99
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="rentalOption" id="option3">
+                                        <label class="form-check-label" for="option3">
+                                            1 Month - $11.99
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Book Details</h5>
+                                <ul>
+                                    <li>Published: 2022</li>
+                                    <li>Pages: 450</li>
+                                    <li>Format: PDF, EPUB</li>
+                                    <li>Language: English</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Rent Button (Mobile) -->
+    <button class="btn btn-accent sticky-rent-btn">
+        <i class="fas fa-shopping-cart me-2"></i> Rent Now
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="index.js"></script>
 </body>
 </html>
