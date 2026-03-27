@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=220&section=header&text=BookifyRent&fontSize=90&fontAlignY=38&animation=twinkling&fontColor=ffffff&desc=📚%20Rent%20Smarter,%20Not%20Harder&descAlignY=62&descSize=22" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=29ABE2&center=true&vCenter=true&width=650&lines=📖+Browse+Thousands+of+Books;💳+Rent+by+the+Week+or+Month;📱+Read+on+Any+Device%2C+Anytime;🎓+Special+Plans+for+Students;🚀+Built+with+HTML+%2B+CSS+%2B+JavaScript" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=29ABE2&center=true&vCenter=true&width=650&lines=+Browse+Thousands+of+Books;+Rent+by+the+Week+or+Month;+Read+on+Any+Device%2C+Anytime;+Special+Plans+for+Students;+Built+with+HTML+%2B+CSS+%2B+JavaScript" alt="Typing SVG" />
 </a>
 
 <br/>
